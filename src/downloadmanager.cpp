@@ -240,5 +240,5 @@ void DownloadManager::addDownload(quint32 ref, quint32 size, quint32 queuepos) {
 
 QString DownloadManager::GetDownloadsDirectoryPath()
 {
-    return QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
+    return QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
 }
