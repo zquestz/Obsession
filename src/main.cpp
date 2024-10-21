@@ -13,6 +13,7 @@ void kill_threads( void );
 
 qint32 main(qint32 argc, char *argv[])
 {
+    QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication a(argc, argv);
     MainWindow w(0, true);
 
